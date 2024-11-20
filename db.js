@@ -16,6 +16,8 @@ var User = new Schema({
 
 mongoose.model('User', User);
 
+var password_token = 'super-secret-f8ed84e8f41e4146403dd4a6bbcea5e418d24i7';
+
 // CloudFoundry env vars
 var mongoCFUri = cfenv.getAppEnv().getServiceURL('goof-mongo');
 console.log(JSON.stringify(cfenv.getAppEnv()));
